@@ -113,7 +113,7 @@ ISR (TIMER0_COMPA_vect)
 
 void Timer0Start()
 {
-	// setting for ~ 200 Hz
+	// configure timer
 	TCCR0A = 0;
 	TIMSK0 |= (1<<OCIE0A);
 	TCCR0B |= (1<<CS01)|(1<<CS00);
